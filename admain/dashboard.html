@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | AI Clinic</title>
+  <link rel="stylesheet" href=".//css/style.css">
+</head>
+<body>
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("show");
+}
+</script>
+  <!-- MOBILE MENU BUTTON -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <h2>AI Clinic</h2>
+  <a class="active" href="#">Dashboard</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="analytics.html">Analytics</a>
+    <a href="../index.html">Logout</a>
+</aside>
+  
+
+  
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+    <h1>Admin Dashboard</h1>
+    <p class="sub-text">Overview of clinic activity</p>
+
+    <!-- STATS -->
+    <div class="cards">
+      <div class="card">
+        <h3>Total Doctors</h3>
+        <p class="number">6</p>
+      </div>
+
+      <div class="card">
+        <h3>Total Patients</h3>
+        <p class="number">128</p>
+      </div>
+
+      <div class="card">
+        <h3>Today Appointments</h3>
+        <p class="number">24</p>
+      </div>
+
+      <div class="card">
+        <h3>Monthly Revenue</h3>
+        <p class="number">$2,450</p>
+      </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-box">
+      <h2>Recent Appointments</h2>
+
+      <table>
+        <tr>
+          <th>Patient</th>
+          <th>Doctor</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Ali Khan</td>
+          <td>Dr Ahmed</td>
+          <td>02 Mar 2026</td>
+          <td class="status done">Completed</td>
+        </tr>
+        <tr>
+          <td>Sara Noor</td>
+          <td>Dr Sara</td>
+          <td>02 Mar 2026</td>
+          <td class="status pending">Pending</td>
+        </tr>
+        <tr>
+          <td>Usman</td>
+          <td>Dr Bilal</td>
+          <td>01 Mar 2026</td>
+          <td class="status done">Completed</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Billing | AI Clinic</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>AI Clinic</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a class="active" href="#">Billing</a>
+    <a href="../index.html">Logout</a>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+    <h1>Billing & Payments</h1>
+    <p class="sub-text">Patient billing details and invoices</p>
+
+    <div class="table-box desktop-only">
+      <table>
+        <tr>
+          <th>Patient</th>
+          <th>Date</th>
+          <th>Services</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Invoice</th>
+        </tr>
+        <tr>
+          <td>Ali Khan</td>
+          <td>02 Mar 2026</td>
+          <td>Consultation + Medicine</td>
+          <td>$45</td>
+          <td class="status done">Paid</td>
+          <td><button class="save-btn">Download</button></td>
+        </tr>
+        <tr>
+          <td>Sara Noor</td>
+          <td>01 Mar 2026</td>
+          <td>Consultation</td>
+          <td>$20</td>
+          <td class="status pending">Pending</td>
+          <td><button class="save-btn">Download</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- MOBILE VIEW -->
+    <div class="billing-cards mobile-only">
+      <div class="billing-card">
+        <h3>Ali Khan</h3>
+        <p><b>Date:</b> 02 Mar 2026</p>
+        <p><b>Services:</b> Consultation + Medicine</p>
+        <p><b>Amount:</b> $45</p>
+        <span class="status done">Paid</span>
+        <button class="save-btn">Download Invoice</button>
+      </div>
+
+      <div class="billing-card">
+        <h3>Sara Noor</h3>
+        <p><b>Date:</b> 01 Mar 2026</p>
+        <p><b>Services:</b> Consultation</p>
+        <p><b>Amount:</b> $20</p>
+        <span class="status pending">Pending</span>
+        <button class="save-btn">Download Invoice</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

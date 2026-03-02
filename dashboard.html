@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Dashboard | AI Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("show");
+}
+</script>
+  <!-- MOBILE MENU BUTTON -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <h2>AI Clinic</h2>
+  <a class="active" href="#">Dashboard</a>
+  <a href="./appointments.html">Appointments</a>
+  <a href="book-appointment.html">Book-Appointments</a>
+  <a href="doctors.html">Doctors</a>
+  <a href="pationts.html">Pationt</a>
+  <a href="dignos.html">Diagnos</a>
+  <a href="./prescriptions.html">Prescriptions</a>
+ 
+  <a href="./billing.html">Billing</a>
+  <a href="Schedule.html">Schedule</a>
+  <a href="index.html">Logout</a>
+</aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <h1>Welcome, Ali Khan</h1>
+    <p class="sub-text">Your health overview</p>
+
+    <!-- CARDS -->
+    <div class="cards">
+      <div class="card">
+        <h3>Appointments</h3>
+        <p class="number">2</p>
+      </div>
+      <div class="card">
+        <h3>Prescriptions</h3>
+        <p class="number">5</p>
+      </div>
+      <div class="card">
+        <h3>Bills</h3>
+        <p class="number">$40</p>
+      </div>
+    </div>
+
+    <!-- TABLE (DESKTOP) -->
+    <div class="table-box desktop-only">
+      <h2>Upcoming Appointments</h2>
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Doctor</th>
+          <th>Reason</th>
+        </tr>
+        <tr>
+          <td>03 Mar</td>
+          <td>10:00 AM</td>
+          <td>Dr Ahmed</td>
+          <td>Fever</td>
+        </tr>
+        <tr>
+          <td>05 Mar</td>
+          <td>02:00 PM</td>
+          <td>Dr Sara</td>
+          <td>Headache</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- MOBILE CARDS -->
+    <div class="mobile-only">
+      <div class="appointment-card">
+        <h3>03 Mar – 10:00 AM</h3>
+        <p>Dr Ahmed</p>
+        <p>Fever</p>
+      </div>
+      <div class="appointment-card">
+        <h3>05 Mar – 02:00 PM</h3>
+        <p>Dr Sara</p>
+        <p>Headache</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("show");
+    }
+  </script> -->
+
+</body>
+</html>

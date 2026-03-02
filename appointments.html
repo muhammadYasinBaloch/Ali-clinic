@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Appointments | AI Clinic</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("show");
+}
+</script>
+  <!-- MOBILE MENU BUTTON -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <h2>AI Clinic</h2>
+  <a href="dashboard.html">Dashboard</a>
+    <a class="active" href="#">Appointments</a>
+    <a href="prescriptions.html">Prescriptions</a>
+    <a href="billing.html">Billing</a>
+    <a href="../index.html">Logout</a>
+</aside>
+
+
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+    <h1>My Appointments</h1>
+    <p class="sub-text">View your past and upcoming appointments</p>
+
+    <!-- DESKTOP TABLE -->
+    <div class="table-box desktop-only">
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Doctor</th>
+          <th>Reason</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>02 Mar 2026</td>
+          <td>10:00 AM</td>
+          <td>Dr Ahmed</td>
+          <td>Fever</td>
+          <td class="status done">Completed</td>
+        </tr>
+        <tr>
+          <td>03 Mar 2026</td>
+          <td>02:00 PM</td>
+          <td>Dr Sara</td>
+          <td>Headache</td>
+          <td class="status pending">Upcoming</td>
+        </tr>
+        <tr>
+          <td>05 Mar 2026</td>
+          <td>11:30 AM</td>
+          <td>Dr Bilal</td>
+          <td>Checkup</td>
+          <td class="status pending">Upcoming</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- MOBILE VIEW -->
+    <div class="appointment-cards mobile-only">
+      <div class="appointment-card">
+        <h3>02 Mar 2026 - 10:00 AM</h3>
+        <p><b>Doctor:</b> Dr Ahmed</p>
+        <p><b>Reason:</b> Fever</p>
+        <span class="status done">Completed</span>
+      </div>
+
+      <div class="appointment-card">
+        <h3>03 Mar 2026 - 02:00 PM</h3>
+        <p><b>Doctor:</b> Dr Sara</p>
+        <p><b>Reason:</b> Headache</p>
+        <span class="status pending">Upcoming</span>
+      </div>
+
+      <div class="appointment-card">
+        <h3>05 Mar 2026 - 11:30 AM</h3>
+        <p><b>Doctor:</b> Dr Bilal</p>
+        <p><b>Reason:</b> Checkup</p>
+        <span class="status pending">Upcoming</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

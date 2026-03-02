@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Appointment | AI Clinic</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+  /* MAIN CONTENT */
+.main {
+  margin-left: 220px;            /* sidebar ke liye space */
+  padding: 30px;
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+/* HEADING */
+.main h1 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.main .sub-text {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* FORM BOX */
+.form-box {
+  background: #fff;
+  max-width: 600px;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* LABEL */
+.form-box label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* INPUTS */
+.form-box input,
+.form-box select,
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-box textarea {
+  resize: none;
+  height: 90px;
+}
+
+/* FOCUS EFFECT */
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+  border-color: #1d2671;
+}
+
+/* BUTTON */
+.save-btn {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: #1d2671;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #c33764;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .main {
+    margin-left: 0;      /* sidebar hat jaye */
+    padding: 20px;
+    padding-top: 80px;  /* top navbar ke liye space */
+  }
+
+  .form-box {
+    width: 100%;
+  }
+}
+</style>
+<body>
+
+ <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <h2>AI Clinic</h2>
+   <a class="active" href="./dashboard.html"> Dashboard</a>
+    <a class="active" href="#">Book Appointment</a>
+    <a href="schedule.html">Daily Schedule</a>
+    <a href="../index.html">Logout</a>
+</aside>
+
+
+
+  <!-- MAIN -->
+  <div class="main">
+    <h1>Book Appointment</h1>
+    <p class="sub-text">Schedule a new appointment for patient</p>
+
+    <div class="form-box">
+      <label>Patient Name</label>
+      <input type="text" placeholder="Enter patient name">
+
+      <label>Appointment Date</label>
+      <input type="date">
+
+      <label>Appointment Time</label>
+      <input type="time">
+
+      <label>Select Doctor</label>
+      <select>
+        <option>Dr Ahmed (Cardiologist)</option>
+        <option>Dr Sara (General Physician)</option>
+        <option>Dr Bilal (Dentist)</option>
+      </select>
+
+      <label>Reason / Notes</label>
+      <textarea placeholder="Reason for visit..."></textarea>
+
+      <button class="save-btn">Book Appointment</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

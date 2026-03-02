@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Schedule | AI Clinic</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("show");
+}
+</script>
+  <!-- MOBILE MENU BUTTON -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <h2>AI Clinic</h2>
+  <a href="dashboard.html">Dashboard</a>
+    <a href="book-appointment.html">Book Appointment</a>
+    <a class="active" href="#">Daily Schedule</a>
+    <a href="../index.html">Logout</a>
+</aside>
+
+ 
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+    <h1>Today's Schedule</h1>
+    <p class="sub-text">Overview of all appointments for today</p>
+
+    <!-- DESKTOP TABLE -->
+    <div class="table-box desktop-only">
+      <table>
+        <tr>
+          <th>Time</th>
+          <th>Patient</th>
+          <th>Doctor</th>
+          <th>Reason</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>10:00 AM</td>
+          <td>Ali Khan</td>
+          <td>Dr Ahmed</td>
+          <td>Fever</td>
+          <td class="status pending">Pending</td>
+        </tr>
+        <tr>
+          <td>11:30 AM</td>
+          <td>Sara Noor</td>
+          <td>Dr Sara</td>
+          <td>Headache</td>
+          <td class="status done">Completed</td>
+        </tr>
+        <tr>
+          <td>02:00 PM</td>
+          <td>Usman</td>
+          <td>Dr Bilal</td>
+          <td>Checkup</td>
+          <td class="status pending">Pending</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- MOBILE CARDS -->
+    <div class="schedule-cards mobile-only">
+      <div class="schedule-card">
+        <h3>10:00 AM - Ali Khan</h3>
+        <p><b>Doctor:</b> Dr Ahmed</p>
+        <p><b>Reason:</b> Fever</p>
+        <span class="status pending">Pending</span>
+      </div>
+
+      <div class="schedule-card">
+        <h3>11:30 AM - Sara Noor</h3>
+        <p><b>Doctor:</b> Dr Sara</p>
+        <p><b>Reason:</b> Headache</p>
+        <span class="status done">Completed</span>
+      </div>
+
+      <div class="schedule-card">
+        <h3>02:00 PM - Usman</h3>
+        <p><b>Doctor:</b> Dr Bilal</p>
+        <p><b>Reason:</b> Checkup</p>
+        <span class="status pending">Pending</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

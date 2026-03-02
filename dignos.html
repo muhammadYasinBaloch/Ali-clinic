@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagnosis | AI Clinic</title>
+  <link rel="stylesheet" href="./css/style.css ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("show");
+}
+</script>
+  <!-- MOBILE MENU BUTTON -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <h2>AI Clinic</h2>
+  <a href="dashboard.html">Dashboard</a>
+    <a href="appointments.html">Appointments</a>
+    <a class="active" href="#">Diagnosis</a>
+    <a href="../index.html">Logout</a>
+</aside>
+
+
+
+
+
+  <!-- MAIN -->
+  <div class="main">
+    <h1>Patient Diagnosis</h1>
+    <p class="sub-text">Enter symptoms and generate AI suggestion</p>
+
+    <div class="form-box">
+      <label>Patient Name</label>
+      <input type="text" placeholder="Enter patient name">
+
+      <label>Symptoms</label>
+      <textarea placeholder="Describe symptoms here..."></textarea>
+
+      <button class="ai-btn">Use AI Assist</button>
+
+      <label>Diagnosis / Notes</label>
+      <textarea placeholder="AI or Doctor notes appear here"></textarea>
+
+      <button class="save-btn">Save Prescription</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

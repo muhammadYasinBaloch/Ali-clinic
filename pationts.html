@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Prescriptions | AI Clinic</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("show");
+}
+</script>
+  <!-- MOBILE MENU BUTTON -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <h2>AI Clinic</h2>
+   <a href="dashboard.html">Dashboard</a>
+    <a href="appointments.html">Appointments</a>
+    <a class="active" href="#">Prescriptions</a>
+    <a href="../index.html">Logout</a>
+</aside>
+
+
+
+  <!-- MAIN -->
+  <div class="main">
+    <h1>My Prescriptions</h1>
+    <p class="sub-text">View your past prescriptions and download PDFs</p>
+
+    <div class="prescription-cards">
+
+      <div class="prescription-card">
+        <h3> Ahmed</h3>
+        <p><b>Date:</b> 02 Mar 2026</p>
+        <p><b>Diagnosis:</b> Viral Fever</p>
+        <p><b>Medications:</b> Paracetamol 500mg, 2x/day</p>
+        <button class="save-btn">Download PDF</button>
+      </div>
+
+      <div class="prescription-card">
+        <h3> Sara</h3>
+        <p><b>Date:</b> 28 Feb 2026</p>
+        <p><b>Diagnosis:</b> Headache</p>
+        <p><b>Medications:</b> Ibuprofen 200mg, 3x/day</p>
+        <button class="save-btn">Download PDF</button>
+      </div>
+      <div class="prescription-card">
+        <h3> Ali</h3>
+        <p><b>Date:</b> 28 Feb 2026</p>
+        <p><b>Diagnosis:</b> Headache</p>
+        <p><b>Medications:</b> Ibuprofen 200mg, 3x/day</p>
+        <button class="save-btn">Download PDF</button>
+      </div>
+      <div class="prescription-card">
+        <h3> Kamran</h3>
+        <p><b>Date:</b> 28 Feb 2026</p>
+        <p><b>Diagnosis:</b> Headache</p>
+        <p><b>Medications:</b> Ibuprofen 200mg, 3x/day</p>
+        <button class="save-btn">Download PDF</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

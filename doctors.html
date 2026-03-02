@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Dashboard | AI Clinic</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("show");
+}
+</script>
+  <!-- MOBILE MENU BUTTON -->
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<aside class="sidebar" id="sidebar">
+  <h2>AI Clinic</h2>
+  <a class="active" href="dashboard.html">Dashboard</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="dignos.html">Diagnosis</a>
+    <a href="./dashboard.html">Book-Appointment</a>
+    <a href="../index.html">Logout</a>
+</aside>
+
+
+
+  <!-- MAIN -->
+  <div class="main">
+    <h1>Doctor Dashboard</h1>
+    <p class="sub-text">Welcome, Dr Ahmed</p>
+
+    <!-- STATS -->
+    <div class="cards">
+      <div class="card">
+        <h3>Today Appointments</h3>
+        <p class="number">8</p>
+      </div>
+      <div class="card">
+        <h3>Total Patients</h3>
+        <p class="number">120</p>
+      </div>
+      <div class="card">
+        <h3>Completed</h3>
+        <p class="number">5</p>
+      </div>
+      <div class="card">
+        <h3>Pending</h3>
+        <p class="number">3</p>
+      </div>
+    </div>
+
+    <!-- APPOINTMENTS -->
+    <div class="table-box desktop-only">
+      <h2>Today’s Appointments</h2>
+      <table>
+        <tr>
+          <th>Patient</th>
+          <th>Time</th>
+          <th>Reason</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Ali Khan</td>
+          <td>10:00 AM</td>
+          <td>Fever</td>
+          <td class="status pending">Pending</td>
+        </tr>
+        <tr>
+          <td>Sara Noor</td>
+          <td>11:30 AM</td>
+          <td>Headache</td>
+          <td class="status done">Completed</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- MOBILE CARDS -->
+    <div class="doctor-cards mobile-only">
+      <div class="doctor-card">
+        <h3>Ali Khan</h3>
+        <p><b>Time:</b> 10:00 AM</p>
+        <p><b>Reason:</b> Fever</p>
+        <span class="status pending">Pending</span>
+      </div>
+
+      <div class="doctor-card">
+        <h3>Sara Noor</h3>
+        <p><b>Time:</b> 11:30 AM</p>
+        <p><b>Reason:</b> Headache</p>
+        <span class="status done">Completed</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
